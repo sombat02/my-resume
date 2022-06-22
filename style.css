@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400&display=swap');
+
+:root {
+  --light-color: #ebdcdc;
+  --dark-color: #1d1b1b;
+  --padding-content: 20px;
+}
+
+body {
+  background-color: var(--dark-color);
+  font-family: 'Prompt', sans-serif;
+
+}
+.container {
+  max-width: 700px;
+  margin: auto;
+}
+.resume-header {
+    display: flex;
+    align-items: center;
+    color: var(--light-color);
+    /* border-top: 5px solid var(--light-color);
+    border-bottom: 5px solid var(--light-color); */
+    background-color:var(--dark-color);
+    height: 180px;
+    margin-top: 50px;
+}
+.resume-hearder-picture {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 50%;
+    border: 8px solid var(--light-color);
+    z-index: 1;
+}
+h1,h2,h3,p,ul {
+  margin: 0;
+}
+
+h1,h2 {
+  text-transform: uppercase;
+}
+h2 {
+  font-weight: normal;
+  text-transform: uppercase;
+}
+h3 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5em;
+  /* margin-bottom: 15px;
+  margin-top: 15px; */
+  margin: 15px 0;
+}
+a {
+  color: inherit;
+}
+ul {
+  padding-left: 20px;
+}
+table {
+  width: 100%;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.resume-content {
+  display: flex;
+  font-weight: 300;
+}
+.resume-content-left {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  padding: var(--padding-content);
+}
+.resume-content-right {
+  background-color: var(--light-color);
+  padding: var(--padding-content);
+
+}
+.resume-exp-p {
+  margin-top: 15px;
+}
+/* media qury */
+@media screen and (max-width: 600px) {
+  .resume-header {
+    margin-top:20px;
+  }
+  .resume-hearder-picture {
+    width: 120px;
+    height: 120px;
+    border-width: 5px;
+  }
+  .resume-content {
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 1.75em;
+  }
+  h2 {
+    font-size: 1.25em;
+  }
+  
+}
